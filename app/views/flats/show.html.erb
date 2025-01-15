@@ -1,0 +1,17 @@
+<div class="row row-cols-1 row-cols-md-1 g-4 flex-column">
+  <div class="card p-3 bg-light">
+    <h1><%= @flat.name %></h1>
+    <h6><%= @flat.address %></h6>
+  </div>
+  <div class="card p-3 bg-light">
+    <h2>A bit more about this flat...</h2>
+    <p><%= @flat.description %></p>
+  </div>
+  <div class="card p-3 bg-light">
+    <h2>Details</h2>
+    <div class="d-flex">
+      <i class="fa-solid fa-users pe-3"><%= @flat.number_of_guests %></i>
+      <i class="fa-solid fa-euro-sign"><%= @flat.price_per_night %></i>
+    </div>
+  </div>
+</div>

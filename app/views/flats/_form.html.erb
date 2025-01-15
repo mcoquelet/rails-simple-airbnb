@@ -1,0 +1,14 @@
+<div class="row d-flex justify-content-center my-4">
+  <div class="col-md-6 bg-light p-3 rounded">
+    <h1><%= title %></h1>
+    <%= simple_form_for(flat) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description, :as => :text, :input_html => { 'rows' => 5, 'cols' => 10 } %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :price_per_night %>
+      <%= f.button :submit, button, class: "btn btn-primary" %>
+      <%= link_to "Cancel", root_path, class: "btn btn-danger" %>
+    <% end %>
+  </div>
+</div>
